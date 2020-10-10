@@ -4,15 +4,12 @@ let objectToArray=({
     followers: 10
   })
 
-
-
-
-let array = [];
-
-
-for(let i in objectToArray) {
-  array.push([i, objectToArray[i]]);
+let funcion=(objeto)=>{
+    let array = [];
+    for(let i in objeto) {
+      array.push([i, objeto[i]]);
+    }
+    return array
 }
-console.log(array)
-
+console.table(funcion(objectToArray))
 
